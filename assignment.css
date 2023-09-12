@@ -6,4 +6,21 @@ nav {
     height: 50px;
     position: fixed;
     background-color: #29243d;
+    display: flex;
+}
+
+ul {
+    display: inline-block;
+    margin-left: 100px;
+    align-items: end;
+    margin:33px 10px 0 0; 
+    padding:0; 
+    width:auto; 
+    height:12px; 
+    list-style:none;
+}
+
+li {
+    margin:0 4px; float:left;
+    font-size: 14px;
 }

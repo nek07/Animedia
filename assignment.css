@@ -1,0 +1,210 @@
+<<<<<<< HEAD
+body {
+    margin: 0;
+    font-family: sans-serif;
+    src: url('https://amedia.online/templates/Darkanimedia/fonts/GothamProRegular.woff');
+}
+
+li {
+    display: inline-block; /* Отображать как строчный элемент */
+    padding: 5px; /* Поля вокруг текста */
+
+    font-weight: 700;
+    color: #E4E4E4;
+    font-size:small ;
+    margin: 0 5px
+
+}
+li:hover {
+    color: #458CC7;
+}
+
+
+#menu {
+    display: flex;
+    min-width: 60%;
+    gap: 10px;
+    flex-shrink: 100px;
+    padding: 4px; /* Значение полей */
+    flex-grow: calc(100%-40%);
+}
+
+nav {
+    display: flex;
+    height: 70px;
+    min-width: 85%;
+    
+    margin: auto;
+    background-color: #24292d;
+    align-items: center;
+    
+    
+}
+
+#roll {
+    display: flex;
+    min-width: 85%;
+    height: 300px;
+    background-color: #1d354a;
+
+    justify-content: center;
+    flex-direction: row;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 15px
+}
+
+#logo {
+    display: block;
+    color:#458CC7;
+    width: 20%;
+    padding-left: 10px;
+
+}
+
+.content {
+    height: 220px;
+    width: 14.5%;
+    display: flex;
+    justify-content: center;
+    flex-direction: row;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 10px;
+    
+    
+}
+
+.roll-img {
+    display: block;
+    height: 170px;
+    width: 100%;
+    object-fit:cover;
+    object-position: center;
+    border-radius: 4px;
+}
+span {
+    display: inline-block;
+    color: #E4E4E4;
+    font-size: 15px;
+    text-align: center;
+}
+
+main {
+    display: grid;
+    gap: 10px;
+    justify-content: center ;
+    background-color: #24292d;
+    grid-template-columns: auto auto;
+}
+.anime {
+    width: 90%;
+    height: 60px;
+    display: flex;
+    background-color: #313639;
+    
+}
+
+.image {
+    display: block;
+    width: 50px;
+    height: 50px;
+    object-fit: cover;
+}
+.title {
+    display: inline-block;
+    width: 70%;
+    height: 30px;
+    text-align: start;
+    margin-left: 10px;
+}
+.title:hover {
+    color: #458CC7;
+    cursor:default
+}
+
+
+#about {
+    display: flex;
+    background-color: #202020;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    
+}
+#link {
+    width: 100%;
+    margin-left: 30px;
+    text-align: left;
+    text-decoration: none;
+    font-size: 14px;
+    font-weight: 500px;
+    color:#B5B5B5;
+}
+#link:visited{
+    text-decoration: none;
+    font-size: 14px;
+    font-weight: 500px;
+}
+
+.info {
+    display: block;
+    height: 90%;
+    text-align: left;
+    margin-bottom: 10px;
+    color:white;
+    max-width: 85%;
+    
+}
+
+.name {
+    margin-bottom: 10px;
+    color:white;
+    font-weight: 700;
+
+}
+
+footer {
+    background-color: black;
+    width: 100%;
+    height: 100px;
+}
+.footer-link:hover {
+    color:#FCDC02;
+}
+.footer-link{
+    color:#3F82A6;
+    text-decoration: none;
+    font-weight: 500;
+}
+.footer-text {
+    font-weight: 500;
+}
+=======
+body {
+    margin: 0;
+}
+nav {
+    width: 100%;
+    height: 50px;
+    position: fixed;
+    background-color: #29243d;
+    display: flex;
+}
+
+ul {
+    display: inline-block;
+    margin-left: 100px;
+    align-items: end;
+    margin:33px 10px 0 0; 
+    padding:0; 
+    width:auto; 
+    height:12px; 
+    list-style:none;
+}
+
+li {
+    margin:0 4px; float:left;
+    font-size: 14px;
+}
+>>>>>>> 6175864cd3600a94acd8343720b61167256b4bbd

@@ -8,7 +8,7 @@ body {
 li {
     display: inline-block; /* Отображать как строчный элемент */
     padding: 5px; /* Поля вокруг текста */
-
+    transition: all 0.15s ease;
     font-weight: 700;
     color: #E4E4E4;
     font-size:small ;
@@ -17,6 +17,7 @@ li {
 }
 li:hover {
     color: #458CC7;
+    cursor:default;
 }
 
 
@@ -56,7 +57,7 @@ nav {
     flex-direction: row;
     align-items: center;
     flex-wrap: wrap;
-    gap: 20px;
+    gap: 2%;
     padding: 35px 15px 15px 15px;
 }
 
@@ -80,11 +81,7 @@ nav {
     justify-content: center;
     flex-direction: column;
     align-items: center;
-    flex-wrap: nowrap;
-    
-    
-    
-    
+    flex-wrap: nowrap; 
 }
 .content span {
     display: block;
@@ -101,7 +98,9 @@ nav {
     object-position: center;
     border-radius: 4px;
     margin-bottom: 7px;
+    transition: all 0.2s ease;
 }
+
 span {
     display: inline-block;
     color: #E4E4E4;
@@ -143,7 +142,6 @@ main {
     margin: 20px 5px 60px 0;
 }
 
-
 #place {
     margin-right: 15px;
 }
@@ -155,6 +153,7 @@ main {
     background-color: #313639;
     border-radius: 5px;
     min-width: 400px;
+    transition: all 0.2s ease;
 }
 .anime:hover {
     background-color: #4C4C4C;
@@ -171,7 +170,8 @@ main {
     float: left;
 }
 .roll-img:hover {
-    filter: brightness(115%)
+    filter: brightness(115%);
+    background: gray;
 }
 .title {
     display: block;
@@ -179,6 +179,7 @@ main {
     text-align: left;
     position: relative;
     top: 12%;
+    transition: all 0.15s ease;
     
 }
 .title:hover {
@@ -225,6 +226,7 @@ main {
     font-size: 15px;
     font-weight: 500px;
     color:#B5B5B5;
+    transition: all 0.15s ease;
 }
 
 .info {
@@ -246,6 +248,7 @@ main {
 #inline-link {
     color:#458CC7;
     text-decoration: none;
+    transition: all 0.2s ease;
 }
 
 #inline-link:hover {
@@ -274,6 +277,8 @@ footer {
     color: #3273AB;
     text-decoration: none;
     font-weight: 525;
+    transition: all 0.15s ease;
+    
 }
 .footer-text {
     width: 100%;

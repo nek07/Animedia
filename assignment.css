@@ -82,6 +82,7 @@ nav {
     flex-direction: column;
     align-items: center;
     flex-wrap: nowrap; 
+    
 }
 .content span {
     display: block;
@@ -172,6 +173,7 @@ main {
 .roll-img:hover {
     filter: brightness(115%);
     background: gray;
+    transform:scale(1.015);
 }
 .title {
     display: block;

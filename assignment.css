@@ -66,8 +66,11 @@ nav {
     display: block;
     color:#458CC7;
     width: 20%;
-    padding-left: 10px;
+    margin-left: 4%;
 
+}
+#color {
+    color:#959CA1;
 }
 
 .content {
@@ -145,8 +148,6 @@ main {
     margin-right: 15px;
 }
 
-
-
 .anime {
     width: 90%;
     height: 60px;
@@ -170,7 +171,7 @@ main {
     float: left;
 }
 .roll-img:hover {
-    filter: brightness(110%)
+    filter: brightness(115%)
 }
 .title {
     display: block;

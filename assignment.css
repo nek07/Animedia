@@ -60,6 +60,8 @@ nav {
     padding: 35px 15px 15px 15px;
 }
 
+
+
 #logo {
     display: block;
     color:#458CC7;
@@ -151,11 +153,10 @@ main {
     margin: auto;
     background-color: #313639;
     border-radius: 5px;
-    
     min-width: 400px;
-    
-    
-    
+}
+.anime:hover {
+    background-color: #4C4C4C;
 }
 
 .image {
@@ -167,6 +168,9 @@ main {
     margin: 5px;
     margin-right: 5px;
     float: left;
+}
+.roll-img:hover {
+    filter: brightness(110%)
 }
 .title {
     display: block;
@@ -186,6 +190,9 @@ main {
     text-align: left;
     position: relative;
     top: 20%;
+    color:#959CA1;
+    font-weight: 600;
+    font-size: 13.25px;
     
 }
 .series {
@@ -212,17 +219,11 @@ main {
 }
 #link {
     width: 100%;
-    margin-left: 30px;
+    margin-left: 50px;
     text-align: left;
-    text-decoration: none;
-    font-size: 14px;
+    font-size: 15px;
     font-weight: 500px;
     color:#B5B5B5;
-}
-#link:visited{
-    text-decoration: none;
-    font-size: 14px;
-    font-weight: 500px;
 }
 
 .info {
@@ -234,7 +235,21 @@ main {
     max-width: 95%;
     
 }
+#name-link {
+    color:#959CA1;
+    text-decoration: none;
+}
+#name-link:hover {
+    color:#4699EF;
+}
+#inline-link {
+    color:#458CC7;
+    text-decoration: none;
+}
 
+#inline-link:hover {
+    color:#4699EF;
+}
 .name {
     margin-bottom: 10px;
     color:white;

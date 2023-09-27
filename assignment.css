@@ -5,36 +5,19 @@ body {
     src: url('https://amedia.online/templates/Darkanimedia/fonts/GothamProRegular.woff');
 }
 
-li {
-    display: inline-block; /* Отображать как строчный элемент */
-    padding: 5px; /* Поля вокруг текста */
-    transition: all 0.15s ease;
-    font-weight: 700;
-    color: #E4E4E4;
-    font-size:small ;
-    margin: 0 5px
-
-}
-li:hover {
-    color: #458CC7;
-    cursor:default;
-}
 
 
 #menu {
     display: flex;
     min-width: 60%;
     gap: 10px;
-    flex-shrink: 100px;
     padding: 4px; /* Значение полей */
-    flex-grow: calc(100%-40%);
 }
 
 nav {
     display: flex;
     height: 90px;
     min-width: 85%;
-    
     margin: auto;
     background-color: #24292d;
     align-items: center;
@@ -290,4 +273,21 @@ footer {
     font-size: 15px;
 }
 
+.dropdown-menu {
+    background-color:#24292d;
+}
+.dropdown-item {
+    background-color: #263848;
+    border-radius: 4px;
+    color: #E4E4E4;
+    transition:all 0.15s ease;
+    display: inline-block;
+}
+.dropdown-item:hover {
+    background-color:#263848;
+    font-weight: 700;
+}
+.dropdown:hover {
+    border-color: #4689C2;
+}
 

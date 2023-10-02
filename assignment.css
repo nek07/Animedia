@@ -2,6 +2,7 @@
     background-color: #0e0e0e;
     margin: 0;
     font-family: sans-serif;
+  
 }
 
 #menu {
@@ -29,7 +30,7 @@ nav {
 }
 #roll {
     display: flex;
-    min-width: 85%;
+    width:100%;
     height: auto;
     background-color: #1d354a;
     justify-content: center;
@@ -47,6 +48,7 @@ nav {
     color:#458CC7;
     width: 20%;
     margin-left: 4%;
+    margin-right: 4%;
 
 }
 #color {
@@ -127,7 +129,7 @@ main {
 }
 
 .anime {
-    width: 90%;
+    width: 100%;
     height: 60px;
     margin: auto;
     background-color: #313639;
@@ -179,11 +181,11 @@ main {
     
 }
 .series {
-   width: 25%;
+   width: 30%;
    display: block;
    text-align: right;
    position: relative;
-   left: 73%;
+   left: 70%;
    bottom: 25px;
    color:#4699EF;
    font-weight: 525;
@@ -216,10 +218,12 @@ main {
     text-align: left;
     margin-bottom: 10px;
     color:white;
-    max-width: 100%;
+    width:100%;
     text-align: justify;
     text-align-last: auto;
     overflow: hidden;
+    position: relative;
+    right:2.3%;
     
 }
 #name-link {
@@ -297,4 +301,23 @@ form {
 
 .custom-background {
     background-color: #0e0e0e; /* Replace with your desired color code */
+}
+.form1{
+    width: 70%;
+ display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: left;
+  
+}
+.pole {
+    display: block;
+    width: 45%;
+    height: 30px;
+    border-radius: 4px;
+}
+.label {
+    display: block;
+    width:10%;
+    font-weight: 800px;
 }

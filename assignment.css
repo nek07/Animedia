@@ -1,11 +1,8 @@
-body {
-    background-color: #0E0E0E;
+#border {
+    background-color: #0e0e0e;
     margin: 0;
     font-family: sans-serif;
-    src: url('https://amedia.online/templates/Darkanimedia/fonts/GothamProRegular.woff');
 }
-
-
 
 #menu {
     display: flex;
@@ -25,10 +22,9 @@ nav {
     
 }
 #test {
-    
     min-width: 700px;
     max-width: 90%;
-    margin: auto;
+    margin: 0 auto;
     background-color: #24292d;
 }
 #roll {
@@ -201,7 +197,7 @@ main {
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    padding: 20px 0 60px 0;
+
     
 }
 #link {
@@ -216,11 +212,14 @@ main {
 
 .info {
     display: block;
-    height: 90%;
+    height: 50%;
     text-align: left;
     margin-bottom: 10px;
     color:white;
-    max-width: 95%;
+    max-width: 100%;
+    text-align: justify;
+    text-align-last: auto;
+    overflow: hidden;
     
 }
 #name-link {
@@ -291,3 +290,11 @@ footer {
     border-color: #4689C2;
 }
 
+form {
+    text-align: left;
+}
+
+
+.custom-background {
+    background-color: #0e0e0e; /* Replace with your desired color code */
+}

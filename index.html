@@ -9,8 +9,8 @@
         <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>
         <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
     </head>
-    <body>
-    <div id="test">
+    <body id="border">
+    <div id="test" class="row">
         <nav>
             <h1 id="logo">ANI<a id="color">MEDIA</a></h1>
             <ul id="menu">
@@ -19,7 +19,7 @@
                         ЖАНРЫ
                     </button>
                     <ul class="dropdown-menu">
-                      <li><a class="dropdown-item" href="#">Боевик</a></li>
+                      <li><a class="dropdown-item " href="#">Боевик</a></li>
                       <li><a class="dropdown-item" href="#">Романтика</a></li>
                       <li><a class="dropdown-item" href="#">Детектив</a></li>
                       <li><a class="dropdown-item" href="#">Спорт</a></li>
@@ -45,11 +45,6 @@
                     </button>
                   </div></li>
                 <li><div class="dropdown">
-                    <button class="btn btn-secondary bg-transparent" type="button">
-                        РАСПИСАНИЕ
-                    </button>
-                    </div></li>
-                <li><div class="dropdown">
                     <button class="btn btn-secondary bg-transparent" type="button" data-bs-toggle="dropdown" aria-expanded="false">
                         ЗАКЛАДКИ
                     </button>
@@ -61,25 +56,56 @@
                       <li><a class="dropdown-item" href="#">Смотрю</a></li>
                       <li><a class="dropdown-item" href="#">Отложено</a></li>
                     </ul></div></li>
+                    <li><div class="dropdown">
+                        <a href="form.html">
+                        <button class="btn btn-secondary bg-transparent" type="button">
+                            ВОПРОСЫ
+                        </button>
+                        </a>
+                        </div></li>
             </ul>
             
         </nav>
         
         <div id="roll">
-            <div class="content"><img class="roll-img" src="https://amedia.online/uploads/posts/2023-08/thumbs/1691338400_1691338998_1.jpeg"><span>Реинкарнация безработного 2</span></div>
-            <div class="content"><img class="roll-img" src="https://amedia.online/uploads/posts/2023-07/thumbs/1688895341_1688850449_1.jpg"><span>Предсмертный список зомби</span></div>
-            <div class="content"><img class="roll-img" src="https://amedia.online/uploads/posts/2023-07/thumbs/1688399164_1687768685_1.jpg"><span>Из мечтателя в реалиста</span></div>
-            <div class="content"><img class="roll-img" src="https://amedia.online/uploads/posts/2023-06/thumbs/1687688146_screenshot_1.png"><span>Бог войны пяти стихий</span></div>
-            <div class="content"><img class="roll-img" src="https://amedia.online/uploads/posts/2023-06/thumbs/1687582805_original.jpg"><span>Боевой континент 2</span></div>
-            <div class="content"><img class="roll-img"  src="https://amedia.online/uploads/posts/2023-06/thumbs/1687423162_original-2.jpg"><span>Лазурное наследие</span></div>
+            <div id="carouselExampleControls" class="carousel slide" data-bs-ride="carousel">
+                <div class="carousel-inner">
+                    <div class="carousel-item active">
+                        <div class="row">
+                            <div class="content col-2"><img class="roll-img" src="https://amedia.online/uploads/posts/2023-08/thumbs/1691338400_1691338998_1.jpeg"><span>Реинкарнация безработного 2</span></div>
+                            <div class="content col-2"><img class="roll-img" src="https://amedia.online/uploads/posts/2023-07/thumbs/1688895341_1688850449_1.jpg"><span>Предсмертный список зомби</span></div>
+                            <div class="content col-2"><img class="roll-img" src="https://amedia.online/uploads/posts/2023-07/thumbs/1688399164_1687768685_1.jpg"><span>Из мечтателя в реалиста</span></div>
+                            <div class="content col-2"><img class="roll-img" src="https://amedia.online/uploads/posts/2023-06/thumbs/1687688146_screenshot_1.png"><span>Бог войны пяти стихий</span></div>
+                            <div class="content col-2"><img class="roll-img" src="https://amedia.online/uploads/posts/2023-06/thumbs/1687582805_original.jpg"><span>Боевой континент 2</span></div>
+                            <div class="content col-2"><img class="roll-img"  src="https://amedia.online/uploads/posts/2023-06/thumbs/1687423162_original-2.jpg"><span>Лазурное наследие</span></div>
+                        </div>
+                    </div>
+                    <div class="carousel-item">
+                        <div class="row">
+                            <div class="content col-2"><img class="roll-img" src="https://amedia.online/uploads/posts/2023-06/thumbs/1687688146_screenshot_1.png"><span>Бог войны пяти стихий</span></div>
+                            <div class="content col-2"><img class="roll-img" src="https://amedia.online/uploads/posts/2023-06/thumbs/1687582805_original.jpg"><span>Боевой континент 2</span></div>
+                            <div class="content col-2"><img class="roll-img"  src="https://amedia.online/uploads/posts/2023-06/thumbs/1687423162_original-2.jpg"><span>Лазурное наследие</span></div>
+                            <div class="content col-2"><img class="roll-img" src="https://amedia.online/uploads/posts/2023-08/thumbs/1691338400_1691338998_1.jpeg"><span>Реинкарнация безработного 2</span></div>
+                            <div class="content col-2"><img class="roll-img" src="https://amedia.online/uploads/posts/2023-07/thumbs/1688895341_1688850449_1.jpg"><span>Предсмертный список зомби</span></div>
+                            <div class="content col-2"><img class="roll-img" src="https://amedia.online/uploads/posts/2023-07/thumbs/1688399164_1687768685_1.jpg"><span>Из мечтателя в реалиста</span></div>
+                        </div>
+                    </div>
+                   
+                </div>
+            </div>
         </div>
         <main>
             <div id="roll-controller">
-                <button style="background-color:#254D6F; color:#E4E4E4;">1</button>
-                <button style="background-color:#585C5F; color:#E4E4E4;">2</button>
+                <button style="background-color:#254D6F; color:#E4E4E4;" type="button" data-bs-target="#carouselExampleControls" bata-bs-slide="prev">1
+                </button>
+                <button style="background-color:#585C5F; color:#E4E4E4;" type="button" data-bs-target="#carouselExampleControls" data-bs-slide="next">2
+                </button>
             </div>
+            <br>
+            <br>
             <h4>ПОСЛЕДНИЕ ОБНОВЛЕНИЯ АНИМЕ</h4>
-            <div class="list">
+            <br>
+            <div class="list row">
                 <div class="anime"><img class="image" src="https://amedia.online/uploads/posts/2023-07/thumbs/1688565758_1687874602_1.jpg"><span class="title">Я переродился торговым автоматом и</span><span class="date">Сегодня, 19:20</span><span class="series">11 СЕРИЯ</span></div>
                 <div class="anime"><img class="image" src="https://amedia.online/uploads/posts/2023-05/thumbs/1683109624_screenshot_1.png"><span class="title">Окутывая небеса</span><span class="date">Сегодня, 18:00</span><span class="series">22 СЕРИЯ</span></div>
                 <div class="anime"><img class="image" src="https://amedia.online/uploads/posts/2023-07/thumbs/1689756508_1689757225435.png"><span class="title">Первый порядок</span><span class="date">Сегодня, 16:01</span><span class="series">10 СЕРИЯ</span></div>
@@ -98,21 +124,22 @@
                 <button style="background-color:#254D6F; color:#E4E4E4;">Назад</button>
                 <button style="background-color:#585C5F; color:#E4E4E4;">Вперед</button>
             </div>
+            <div id="about" class="row">
+                <span id="link" class="col-lg-9 col-xs-9"><a id="name-link" href="https://amedia.online/">AniMedia Online</a></span>
+                <span class="name col-xs-11 col-lg-10">ANIMEDIA ONLINE - СМОТРЕТЬ АНИМЕ ОНЛАЙН</span>
+                <span class="info col-xs-11 col-lg-10">Сегодня все хотят <strong>смотреть аниме онлайн</strong>, в особенности японских режиссеров. От обычных мультсериалов анимешки отличаются большей чувственностью героев и их эмоциональностью. В нашей базе AniMedia Online вы сможете лучшие аниме смотреть онлайн в любое удобное время. Ведь что может быть лучше, чем после дневных забот включить любимую картину и хоть на некоторое время забыть обо всех хлопотах. К тому же, теперь не нужно ждать, пока скачается новая серия или пока ее покажут по телевизору. Все что вам понадобится – это выбрать онгоинг и можно приступать к просмотру.</span>
+                <span class="info col-xs-11 col-lg-10">Особое внимание заслуживает и музыкальное сопровождение, которым так богаты лучшие аниме шедевры. Оно помогает зрителю прочувствовать все эмоции, которые испытывают герои в той или иной ситуации, сопереживать вместе с действующими лицами в случае неудач и радоваться их успехам. С каждым годом выходит все больше новых картин с более качественной графикой и спецэффектами. У нас вы сможете <a id="inline-link" href="https://amedia.online/">смотреть новые аниме 2022</a> сразу же после их выхода на экраны, при этом они будут в хорошем качестве и вам не понадобится регистрироваться. Вас ждут новые герои, неожиданные повороты сюжета, а также продолжения понравившихся сериалов, которые не оставят равнодушными ценителей этого жанра.</span>
+                <span class="info col-xs-11 col-lg-10">Если вы еще не знаете, что посмотреть бесплатно и хотите узнать мнение других посетителей, то у нас есть топ аниме сериалов онлайн, который строится исходя из количества просмотров. Здесь вы сможете найти картину на любой вкус, например, кто-то предпочитает смотреть мастера меча онлайн, а кто-то картины драматического характера. Все это есть у нас на сайте! Вам нужно только сделать пару кликов мышкой и вместе с главными героями вы перенесетесь в их удивительный мир, полный приключений. Приятного просмотра.</span>
+            </div>
         </main>
-        <div id="about">
-            <span id="link"><a id="name-link" href="https://amedia.online/">AniMedia Online</a></span>
-            <span class="name">ANIMEDIA ONLINE - СМОТРЕТЬ АНИМЕ ОНЛАЙН</span>
-            <span class="info">Сегодня все хотят <strong>смотреть аниме онлайн</strong>, в особенности японских режиссеров. От обычных мультсериалов анимешки отличаются большей чувственностью героев и их эмоциональностью. В нашей базе AniMedia Online вы сможете лучшие аниме смотреть онлайн в любое удобное время. Ведь что может быть лучше, чем после дневных забот включить любимую картину и хоть на некоторое время забыть обо всех хлопотах. К тому же, теперь не нужно ждать, пока скачается новая серия или пока ее покажут по телевизору. Все что вам понадобится – это выбрать онгоинг и можно приступать к просмотру.</span>
-            <span class="info">Особое внимание заслуживает и музыкальное сопровождение, которым так богаты лучшие аниме шедевры. Оно помогает зрителю прочувствовать все эмоции, которые испытывают герои в той или иной ситуации, сопереживать вместе с действующими лицами в случае неудач и радоваться их успехам. С каждым годом выходит все больше новых картин с более качественной графикой и спецэффектами. У нас вы сможете <a id="inline-link" href="https://amedia.online/">смотреть новые аниме 2022</a> сразу же после их выхода на экраны, при этом они будут в хорошем качестве и вам не понадобится регистрироваться. Вас ждут новые герои, неожиданные повороты сюжета, а также продолжения понравившихся сериалов, которые не оставят равнодушными ценителей этого жанра.</span>
-            <span class="info">Если вы еще не знаете, что посмотреть бесплатно и хотите узнать мнение других посетителей, то у нас есть топ аниме сериалов онлайн, который строится исходя из количества просмотров. Здесь вы сможете найти картину на любой вкус, например, кто-то предпочитает смотреть мастера меча онлайн, а кто-то картины драматического характера. Все это есть у нас на сайте! Вам нужно только сделать пару кликов мышкой и вместе с главными героями вы перенесетесь в их удивительный мир, полный приключений. Приятного просмотра.</span>
-        </div>
-        <footer>
+        
+        <footer >
             <br>
             <span class="footer-text"><a class="footer-link" href="https://amedia.online/?do=feedback">Для правообладателей</a> Или писать на почту admin@amedia.online</span>
             <span class="footer-text">Animedia Онлайн 2022 (18+) <a href="https://amedia.online/" class="footer-link">Все аниме онлайн в одном месте</a> | <a class="footer-link" href="https://doram.club/">Дорамы смотреть</a></span>
             <br>
         </footer>
     </div>
-    
+   
     </body>
 </html>

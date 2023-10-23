@@ -4,12 +4,12 @@
     box-sizing: border-box;
 }
 body {
-    background-image: url("images/cartoon.jpg");
-    background-size: cover;
     background-repeat: no-repeat;
-    margin:0;
-    padding:0;
-    height: fit-content;
+    background-image: url("images/cartoon.jpg");
+    image-rendering: optimizeSpeed;
+    background-size: cover;
+    margin: 0;
+    padding: 0;
 }
 
 #border {

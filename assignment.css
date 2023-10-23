@@ -1,10 +1,16 @@
 * {
     margin:0;
     padding: 0;
-    font-family: 'Montserrat', sans-serif;
     box-sizing: border-box;
 }
-
+body {
+    background-image: url("images/cartoon.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    margin:0;
+    padding:0;
+    height: fit-content;
+}
 
 #border {
     background-color: #0e0e0e;
@@ -25,6 +31,7 @@
     max-width: 90%;
     margin: 0 auto;
     background-color: #24292d;
+    height: 100%;
 }
 #roll {
     display: flex;
@@ -113,6 +120,7 @@ main {
     border: none;
     border-radius: 3px;
     margin: 7.5px 5px 0 0;
+    text-align: center;
 }
 #control button {
     width: 70px;
@@ -120,6 +128,7 @@ main {
     border: none;
     border-radius: 4px;
     margin: 20px 5px 60px 0;
+    text-align: center;
 }
 
 #place {
@@ -269,11 +278,11 @@ footer {
 .footer-text {
     width: 100%;
     text-align: left;
-    margin: 0 0 10px 10px;
     font-weight: 500;
     font-size: 15px;
+    color:#555555;
+    margin-left: 10px;
 }
-
 .dropdown-menu {
     background-color:#24292d;
 }
@@ -319,7 +328,6 @@ form {
     width:10%;
     font-weight: 800px;
 }
-
 #navigation {
 
     width: 30%;
@@ -336,23 +344,21 @@ form {
 
 
 
+
 .todo-app {
     width:100%;
-    max-width: 540px;
     background-color: white;
     margin: 0 auto 0px;
     padding: 40px 30px 70px;
     border-radius: 10px;
     
 }
-.container {
+.app-container {
     width:100% !important;
     max-width: 540px !important;
     background-color: white !important;
-    margin: 0 auto 0px !important;
-    padding: 40px 30px 70px !important;
     border-radius: 10px !important;
-    margin: 100px auto 7.5px !important;
+    
 }
 .row1 {
     display: flex;
@@ -371,8 +377,10 @@ input{
     background-color: transparent !important;
     padding: 7.5px !important;
     font-weight: 14px !important;
+    width: 70%;
 }
 #addTask{
+    position: relative;
     border: none !important;
     outline: none !important;
     padding: 12px 50px !important;
@@ -381,16 +389,23 @@ input{
     cursor: pointer !important;
     background:#50C878;
     border-radius: 25px !important;
-
+    width:30%;
+    
 }
 
 ul li{
+    display: flex;
     list-style: none;
     font-size: 17px;
     padding: 12px 8px 12px 50px;
     user-select: none;
     cursor: pointer;
     position: relative;
+    text-align: left;
+    left:-3%;
+    width: 100%;
+    overflow: hidden;
+    flex-flow: column;
 }
 ul li::before {
     content: '';
@@ -402,12 +417,12 @@ ul li::before {
     background-size: cover;
     background-position: center;
     top: 12px;
-    left: 8px;
-    color: black !important;
+    left:8px;
+    color: #555555 !important;
 }
 
 ul li.checked {
-    color: black !important;
+    color: #555555 !important;
     text-decoration: line-through;
 }
 ul li.checked::before{
@@ -420,7 +435,7 @@ ul li span{
     width: 40px;
     height: 40px;
     font-size: 22px;
-    color: black;
+    color: #555555 !important;
     text-align: center;
     line-height: 40px;
 }
@@ -429,60 +444,24 @@ ul li span:hover {
     border-radius: 10px;
     
 }
-#header-of-todo {
+
+
+.form-container {
     display: flex;
     width: 100%;
-    max-width: 540px;
-    height: 50px;
-    margin: 100px auto 7.5px;
-    padding: 30px 25px 30px;
-    justify-content: space-between;
-    align-items: center;
-    background-color: white;
-    border-radius: 10px;
+    min-height: 100%;
+    background: linear-gradient(135deg, #153677, #4e085f);
+    padding:10px;
+    flex-direction: column;
+    align-content: space-between;
+}
+.container1 {
+    width:100% !important;
+    max-width: 540px !important;
+    background-color: white !important;
+    margin: 0 auto 0px !important;
+    padding: 40px 30px 70px !important;
+    border-radius: 10px !important;
+    margin: 100px auto 7.5px !important;
 }
 
-
-
-.comments {
-    width: 50%;
-    margin: 20px auto;
-    padding: 20px;
-    border: 1px solid #ccc;
-    border-radius: 5px;
-    background-color: #f5f5f5;
-    text-align: left;
-}
-
-h2 {
-    font-size: 24px;
-    color: #333;
-    margin-bottom: 20px;
-}
-
-.comment {
-    display: flex;
-    align-items: center;
-    margin-bottom: 20px;
-}
-
-.comment img {
-    width: 60px;
-    height: 60px;
-    border-radius: 50%;
-    margin-right: 10px;
-}
-
-.comment-content {
-    flex: 1;
-}
-
-.comment-content h3 {
-    font-size: 18px;
-    color: #333;
-}
-
-.comment-content p {
-    font-size: 14px;
-    color: #666;
-}

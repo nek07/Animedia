@@ -1,0 +1,191 @@
+* {
+    margin:0;
+    padding: 0;
+    font-family: 'Montserrat', sans-serif;
+    box-sizing: border-box;
+}
+
+body {
+    background-image: url("images/cartoon.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+#test {
+    
+    min-width: 700px;
+    max-width: 90%;
+    margin: 0 auto;
+    background-color: #24292d;
+}
+.form-container {
+    display: flex;
+    width: 100%;
+    height: 100%;
+    min-height: 100%;
+    background-color: #24292d;
+    padding:10px 20px;
+    flex-direction: column;
+    align-items: center;
+    margin-bottom: 100px;
+}
+.app-container {
+    display: flex;
+    width: 100%;
+    
+    background-color: #24292d;
+    padding:10px;
+    flex-direction: column;
+    align-items: center;
+}
+.todo-app {
+    width:100%;
+    max-width: 540px;
+    background-color: white;
+    margin: 0 auto 0px;
+    padding: 40px 30px 70px;
+    border-radius: 10px;
+    
+}
+.container {
+    width:100% !important;
+    max-width: 540px !important;
+    background-color: white !important;
+    margin: 0 auto 0px !important;
+    padding: 40px 30px 70px !important;
+    border-radius: 10px !important;
+    margin: 100px auto 7.5px !important;
+}
+.row1 {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background-color: #edeef0;
+    border-radius: 25px;
+    padding-left: 20px;
+    margin-bottom:25px;
+
+}
+input{
+    flex: 1;
+    border: none;
+    outline: none;
+    background-color: transparent;
+    padding: 7.5px;
+    font-weight: 14px;
+}
+#addTask{
+    border: none;
+    outline: none;
+    padding: 12px 50px;
+    color: white;
+    font-size: 16px;
+    cursor: pointer;
+    /*background:#50C878;*/
+    border-radius: 25px;
+
+}
+
+ul li{
+    list-style: none;
+    font-size: 17px;
+    padding: 12px 8px 12px 50px;
+    user-select: none;
+    cursor: pointer;
+    position: relative;
+}
+ul li::before {
+    content: '';
+    position: absolute;
+    height: 28px;
+    width: 28px;
+    border-radius: 50%;
+    background-image: url(images/unchecked.png);
+    background-size: cover;
+    background-position: center;
+    top: 12px;
+    left: 8px
+}
+
+ul li.checked {
+    color: #555;
+    text-decoration: line-through;
+}
+ul li.checked::before{
+    background-image: url(https://image.similarpng.com/very-thumbnail/2021/12/Green-check-mark-on-transparent-background-PNG.png);
+}
+ul li span{
+    position: absolute;
+    right: 0;
+    top: 5px;
+    width: 40px;
+    height: 40px;
+    font-size: 22px;
+    color: #555555;
+    text-align: left;
+    line-height: 40px;
+}
+ul li span:hover {
+    background: #edeef0;
+    border-radius: 10px;
+    
+}
+
+#header-of-todo {
+    display: flex;
+    width: 100%;
+    max-width: 540px;
+    height: 50px;
+    margin: 100px auto 7.5px;
+    padding: 30px 25px 30px;
+    justify-content: space-between;
+    align-items: center;
+    background-color: white;
+    border-radius: 10px;
+}
+
+#navigation {
+    width: 30% !important;
+    max-width:200px !important;
+    height: 100% !important;
+}
+
+.timer-container {
+    text-align: center;
+}
+
+.timer {
+    font-size: 2rem;
+}
+
+.responsive1 {
+    display: flex;
+    flex-direction: column;
+
+}
+
+footer {
+    background-color: black;
+    width: 100%;
+    height: 80px;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+}
+.footer-link:hover {
+    color:#FCDC02;
+}
+.footer-link{
+    color: #3273AB;
+    text-decoration: none;
+    font-weight: 525;
+    transition: all 0.15s ease;
+    
+}
+.footer-text {
+    width: 100%;
+    text-align: left;
+    font-weight: 500;
+    font-size: 15px;
+    color:#555555;
+    margin-left: 10px;
+}

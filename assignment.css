@@ -1,3 +1,11 @@
+* {
+    margin:0;
+    padding: 0;
+    font-family: 'Montserrat', sans-serif;
+    box-sizing: border-box;
+}
+
+
 #border {
     background-color: #0e0e0e;
     margin: 0;
@@ -12,16 +20,6 @@
     padding: 4px; /* Значение полей */
 }
 
-nav {
-    display: flex;
-    height: 90px;
-    min-width: 85%;
-    margin: auto;
-    background-color: #24292d;
-    align-items: center;
-    
-    
-}
 #test {
     min-width: 700px;
     max-width: 90%;
@@ -56,27 +54,27 @@ nav {
 }
 
 .content {
-    height: 87%;
+    height: 100%;
     width: 14%;
     display: flex;
-    justify-content: center;
+    justify-content: space-between;
     flex-direction: column;
     align-items: center;
     flex-wrap: nowrap; 
     
 }
 .content span {
-    display: block;
+    display: inline-block;
     color: #E4E4E4;
     font-size: 13.5px;
     text-align: center;
-    height: 50px;
+    height: 15%;
 }
 .roll-img {
     display: block;
-    height: 90%;
+    height: 85%;
     width: 100%;
-    object-fit:cover;
+    object-fit:fill;
     object-position: center;
     border-radius: 4px;
     margin-bottom: 7px;
@@ -96,7 +94,7 @@ h4{
 }
 main {
     background-color: #24292d;
-    color:#E4E4E4;
+    color:black;
     text-align: center;
     
 
@@ -196,8 +194,8 @@ main {
 #about {
     display: flex;
     background-color: #202020;
-    flex-direction: column;
-    justify-content: center;
+    flex-direction: row;
+    justify-content: space-between;
     align-items: center;
 
     
@@ -320,4 +318,171 @@ form {
     display: block;
     width:10%;
     font-weight: 800px;
+}
+
+#navigation {
+
+    width: 30%;
+    max-width:200px;
+    height: 100%;
+}
+
+
+
+
+
+
+
+
+
+
+.todo-app {
+    width:100%;
+    max-width: 540px;
+    background-color: white;
+    margin: 0 auto 0px;
+    padding: 40px 30px 70px;
+    border-radius: 10px;
+    
+}
+.container {
+    width:100% !important;
+    max-width: 540px !important;
+    background-color: white !important;
+    margin: 0 auto 0px !important;
+    padding: 40px 30px 70px !important;
+    border-radius: 10px !important;
+    margin: 100px auto 7.5px !important;
+}
+.row1 {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background-color: #edeef0;
+    border-radius: 25px;
+    padding-left: 20px;
+    margin-bottom:25px;
+
+}
+input{
+    flex: 1 !important;
+    border: none !important;
+    outline: none !important;
+    background-color: transparent !important;
+    padding: 7.5px !important;
+    font-weight: 14px !important;
+}
+#addTask{
+    border: none !important;
+    outline: none !important;
+    padding: 12px 50px !important;
+    color: white !important;
+    font-size: 16px !important;
+    cursor: pointer !important;
+    background:#50C878;
+    border-radius: 25px !important;
+
+}
+
+ul li{
+    list-style: none;
+    font-size: 17px;
+    padding: 12px 8px 12px 50px;
+    user-select: none;
+    cursor: pointer;
+    position: relative;
+}
+ul li::before {
+    content: '';
+    position: absolute;
+    height: 28px;
+    width: 28px;
+    border-radius: 50%;
+    background-image: url(images/unchecked.png);
+    background-size: cover;
+    background-position: center;
+    top: 12px;
+    left: 8px;
+    color: black !important;
+}
+
+ul li.checked {
+    color: black !important;
+    text-decoration: line-through;
+}
+ul li.checked::before{
+    background-image: url(https://image.similarpng.com/very-thumbnail/2021/12/Green-check-mark-on-transparent-background-PNG.png);
+}
+ul li span{
+    position: absolute;
+    right: 0;
+    top: 5px;
+    width: 40px;
+    height: 40px;
+    font-size: 22px;
+    color: black;
+    text-align: center;
+    line-height: 40px;
+}
+ul li span:hover {
+    background: #edeef0;
+    border-radius: 10px;
+    
+}
+#header-of-todo {
+    display: flex;
+    width: 100%;
+    max-width: 540px;
+    height: 50px;
+    margin: 100px auto 7.5px;
+    padding: 30px 25px 30px;
+    justify-content: space-between;
+    align-items: center;
+    background-color: white;
+    border-radius: 10px;
+}
+
+
+
+.comments {
+    width: 50%;
+    margin: 20px auto;
+    padding: 20px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    background-color: #f5f5f5;
+    text-align: left;
+}
+
+h2 {
+    font-size: 24px;
+    color: #333;
+    margin-bottom: 20px;
+}
+
+.comment {
+    display: flex;
+    align-items: center;
+    margin-bottom: 20px;
+}
+
+.comment img {
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+    margin-right: 10px;
+}
+
+.comment-content {
+    flex: 1;
+}
+
+.comment-content h3 {
+    font-size: 18px;
+    color: #333;
+}
+
+.comment-content p {
+    font-size: 14px;
+    color: #666;
 }

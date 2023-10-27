@@ -31,8 +31,17 @@ body {
     background-color: #24292d;
     padding:10px;
     flex-direction: row;
-
     justify-content: space-between;
+}
+.form-container1 {
+    display: flex;
+    width: 100%;
+    min-height: 100vh;
+    background-color: #24292d;
+    padding:10px;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
 }
 .todo-app {
     width:100%;

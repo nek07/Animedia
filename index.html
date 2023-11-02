@@ -6,8 +6,8 @@
         <meta name="description" content="Anime, Animedia, Movie">
         
         <meta name="viewport" content="width=device-width, initial-scale=1" />
-        <link rel="stylesheet" href="assignment.css">
-        <link rel="stylesheet" href="formStyle.css">
+        <link rel="stylesheet" href="design/assignment.css">
+        <link rel="stylesheet" href="design/formStyle.css">
         <link rel="icon" type="images/x-icon" href="images/japan-icon.ico">
         <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>
         <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
@@ -15,11 +15,12 @@
         <link rel="preconnect" href="https://fonts.googleapis.com">
         <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
         <link href="https://fonts.googleapis.com/css2?family=Montserrat&display=swap" rel="stylesheet">
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
     </head>
     <body id="border">
-    <div id="test" class="row">
+    <div id="test" class="row" >
     
-        <nav class="navbar navbar-dark bg-dark" style="padding:0.5% 1.6%">
+        <nav class="navbar navbar-dark bg-dark col-12" style="padding:0.5% 1.6%">
             <iconify-icon icon="meteocons:fog-day-fill" width="30" height="30"></iconify-icon>
             <div id="navigation" class="row">
                 <a href="form.html" target="_blank" class="col-4"><iconify-icon icon="line-md:email-twotone" style="color: #cdd3ff"  width="27.5" height="27.5"></iconify-icon></a>
@@ -30,8 +31,8 @@
           </nav>
         
         
-        <div id="roll">
-            <div id="carouselExampleControls" class="carousel slide" data-bs-ride="false">
+        <div id="roll" class="col-12 col-md-12 col-xs-0">
+            <div id="carouselExampleControls" class="carousel slide  d-none d-md-block" data-bs-ride="false">
                 <div class="carousel-inner">
                     <div class="carousel-item active">
                         <div class="row">
@@ -57,7 +58,7 @@
                 </div>
             </div>
         </div>
-        <main>
+        <main class="col-12">
             <div id="roll-controller">
                 <div id="roll-controller">
                     <button style="background-color:#254D6F; color:#E4E4E4;" type="button" data-bs-target="#carouselExampleControls" data-bs-slide="prev">1</button>
@@ -69,20 +70,20 @@
             <h4 style="color:#E4E4E4">ПОСЛЕДНИЕ ОБНОВЛЕНИЯ АНИМЕ</h4>
             <br>
             <div class="list row">
-                <div class="anime col-lg-5 col-xs-9"><img class="image" src="https://amedia.online/uploads/posts/2023-07/thumbs/1688565758_1687874602_1.jpg"><span class="title">Я переродился торговым автоматом и</span><span class="date">Сегодня, 19:20</span><span class="series">11 СЕРИЯ</span></div>
-                <div class="anime col-lg-5 col-xs-9"><img class="image" src="https://amedia.online/uploads/posts/2023-05/thumbs/1683109624_screenshot_1.png"><span class="title">Окутывая небеса</span><span class="date">Сегодня, 18:00</span><span class="series">22 СЕРИЯ</span></div>
-                <div class="anime col-lg-5 col-xs-9"><img class="image" src="https://amedia.online/uploads/posts/2023-07/thumbs/1689756508_1689757225435.png"><span class="title">Первый порядок</span><span class="date">Сегодня, 16:01</span><span class="series">10 СЕРИЯ</span></div>
-                <div class="anime col-lg-5 col-xs-9"><img class="image" src="https://amedia.online/uploads/posts/2021-05/thumbs/1620298885_original.jpg"><span class="title">Я в тебе не сомневаюсь</span><span class="date">Сегодня, 13:10</span><span class="series">40 СЕРИЯ</span></div>
-                <div class="anime col-lg-5 col-xs-9"><img class="image" src="https://amedia.online/uploads/posts/2022-06/thumbs/1655240690_ladybug_5_seson.jpg"><span class="title">Леди Баг и Супер Кот 5</span><span class="date">Сегодня, 01:18</span><span class="series">27 СЕРИЯ</span></div>
-                <div class="anime col-lg-5 col-xs-9"><img class="image" src="https://amedia.online/uploads/posts/2019-01/thumbs/1548872951_poster.jpg"><span class="title">Владыка духовного меча</span><span class="date">Сегодня, 00:28</span><span class="series">27 СЕРИЯ</span></div>
-                <div class="anime col-lg-5 col-xs-9"><img class="image" src="https://amedia.online/uploads/posts/2023-04/thumbs/1681325256_c4b18e52df383a5380bdae9e6ff8d099.jpg"><span class="title">Записи о пути к возвышению</span><span class="date">Сегодня, 00:27</span><span class="series">417 СЕРИЯ</span></div>
-                <div class="anime col-lg-5 col-xs-9"><img class="image" src="https://amedia.online/uploads/posts/2023-06/thumbs/1687782745_screenshot_1.png"><span class="title">Однушка лорда демонов и героя</span><span class="date">Сегодня 00:20</span><span class="series">53 СЕРИЯ</span></div>
-                <div class="anime col-lg-5 col-xs-9"><img class="image" src="https://amedia.online/uploads/posts/2023-07/thumbs/1689100202_648585d6c044a086850348.jpg"><span class="title">Хельк</span><span class="date">Вчера, 22:53</span><span class="series">11 СЕРИЯ</span></div>
-                <div class="anime col-lg-5 col-xs-9"><img class="image" src="https://amedia.online/uploads/posts/2023-08/thumbs/1691070597_1691071437766.png"><span class="title">Книга девяти звёзд</span><span class="date">Вчера, 19:38</span><span class="series">10 СЕРИЯ</span></div>
-                <div class="anime col-lg-5 col-xs-9"><img class="image" src="https://amedia.online/uploads/posts/2023-04/thumbs/1680580094_screenshot_7.png"><span class="title">В бегах: Великая миссия</span><span class="date">Вчера, 19:24</span><span class="series">19 СЕРИЯ</span></div>
-                <div class="anime col-lg-5 col-xs-9"><img class="image" src="https://amedia.online/uploads/posts/2023-04/thumbs/1680705751_screenshot_2.png"><span class="title">Мастера дуэлей: Победа</span><span class="date">Вчера, 19:19</span><span class="series">22 СЕРИЯ</span></div>
+                <div class="anime col-lg-5 col-xs-6"><img class="image" src="https://amedia.online/uploads/posts/2023-07/thumbs/1688565758_1687874602_1.jpg"><span class="title">Я переродился торговым автоматом и</span><span class="date">Сегодня, 19:20</span><span class="series">11 СЕРИЯ</span></div>
+                <div class="anime col-lg-5 col-xs-6"><img class="image" src="https://amedia.online/uploads/posts/2023-05/thumbs/1683109624_screenshot_1.png"><span class="title">Окутывая небеса</span><span class="date">Сегодня, 18:00</span><span class="series">22 СЕРИЯ</span></div>
+                <div class="anime col-lg-5 col-xs-6"><img class="image" src="https://amedia.online/uploads/posts/2023-07/thumbs/1689756508_1689757225435.png"><span class="title">Первый порядок</span><span class="date">Сегодня, 16:01</span><span class="series">10 СЕРИЯ</span></div>
+                <div class="anime col-lg-5 col-xs-6"><img class="image" src="https://amedia.online/uploads/posts/2021-05/thumbs/1620298885_original.jpg"><span class="title">Я в тебе не сомневаюсь</span><span class="date">Сегодня, 13:10</span><span class="series">40 СЕРИЯ</span></div>
+                <div class="anime col-lg-5 col-xs-6"><img class="image" src="https://amedia.online/uploads/posts/2022-06/thumbs/1655240690_ladybug_5_seson.jpg"><span class="title">Леди Баг и Супер Кот 5</span><span class="date">Сегодня, 01:18</span><span class="series">27 СЕРИЯ</span></div>
+                <div class="anime col-lg-5 col-xs-6"><img class="image" src="https://amedia.online/uploads/posts/2019-01/thumbs/1548872951_poster.jpg"><span class="title">Владыка духовного меча</span><span class="date">Сегодня, 00:28</span><span class="series">27 СЕРИЯ</span></div>
+                <div class="anime col-lg-5 col-xs-6"><img class="image" src="https://amedia.online/uploads/posts/2023-04/thumbs/1681325256_c4b18e52df383a5380bdae9e6ff8d099.jpg"><span class="title">Записи о пути к возвышению</span><span class="date">Сегодня, 00:27</span><span class="series">417 СЕРИЯ</span></div>
+                <div class="anime col-lg-5 col-xs-6"><img class="image" src="https://amedia.online/uploads/posts/2023-06/thumbs/1687782745_screenshot_1.png"><span class="title">Однушка лорда демонов и героя</span><span class="date">Сегодня 00:20</span><span class="series">53 СЕРИЯ</span></div>
+                <div class="anime col-lg-5 col-xs-6"><img class="image" src="https://amedia.online/uploads/posts/2023-07/thumbs/1689100202_648585d6c044a086850348.jpg"><span class="title">Хельк</span><span class="date">Вчера, 22:53</span><span class="series">11 СЕРИЯ</span></div>
+                <div class="anime col-lg-5 col-xs-6"><img class="image" src="https://amedia.online/uploads/posts/2023-08/thumbs/1691070597_1691071437766.png"><span class="title">Книга девяти звёзд</span><span class="date">Вчера, 19:38</span><span class="series">10 СЕРИЯ</span></div>
+                <div class="anime col-lg-5 col-xs-6"><img class="image" src="https://amedia.online/uploads/posts/2023-04/thumbs/1680580094_screenshot_7.png"><span class="title">В бегах: Великая миссия</span><span class="date">Вчера, 19:24</span><span class="series">19 СЕРИЯ</span></div>
+                <div class="anime col-lg-5 col-xs-6"><img class="image" src="https://amedia.online/uploads/posts/2023-04/thumbs/1680705751_screenshot_2.png"><span class="title">Мастера дуэлей: Победа</span><span class="date">Вчера, 19:19</span><span class="series">22 СЕРИЯ</span></div>
             </div>
-            <div id="control">
+            <div id="control col-12">
                 <span id="place">1 из 4</span>
                 <button style="background-color:#254D6F; color:#E4E4E4;">Назад
         
@@ -93,7 +94,7 @@
             </div>
             <br>
             <div id="about" class="row">
-                <div id="about" class="row">
+                <div id="about" class="row col-12">
                     <br>
                     <span id="link" class="col-lg-9 col-xs-9"><a id="name-link" href="https://amedia.online/">AniMedia Online</a></span>
                     <span class="name col-xs-12 col-lg-11">ANIMEDIA ONLINE - СМОТРЕТЬ АНИМЕ ОНЛАЙН</span>
@@ -104,14 +105,14 @@
                 </div>
         </main>
         
-        <footer >
+        <footer class="col-12">
             <br>
             <span class="footer-text"><a class="footer-link" href="https://amedia.online/?do=feedback">Для правообладателей</a> Или писать на почту admin@amedia.online</span>
             <span class="footer-text">Animedia Онлайн 2022 (18+) <a href="https://amedia.online/" class="footer-link">Все аниме онлайн в одном месте</a> | <a class="footer-link" href="https://doram.club/">Дорамы смотреть</a></span>
             
         </footer>
     </div>
-    <script src="script.js"></script>
+    <script src="js_files/script.js"></script>
     <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
     <script src="https://cdn.jsdelivr.net/npm/popper.js@1.14.7/dist/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.3.1/dist/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>

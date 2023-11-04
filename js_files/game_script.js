@@ -2,16 +2,19 @@
 //copied and pasted this js from w3school
 //feel free to give suggestions to any part of the code and tweet me @ilovepeoplez ! ^^
 
-function allowDrop(ev) {
-    ev.preventDefault();
-}
+$(document).ready(function() {
+    $(".draggable").on("dragstart", function(event) {
+        event.originalEvent.dataTransfer.setData("text", event.target.id);
+    });
 
-function drag(ev) {
-    ev.dataTransfer.setData("text", ev.target.id);
-}
+    $(".droppable").on("dragover", function(event) {
+        event.preventDefault();
+    });
 
-function drop(ev) {
-    ev.preventDefault();
-    var data = ev.dataTransfer.getData("text");
-    ev.target.appendChild(document.getElementById(data));
-}
+    $(".droppable").on("drop", function(event) {
+        event.preventDefault();
+        var data = event.originalEvent.dataTransfer.getData("text"); // Use originalEvent
+        var draggableElement = document.getElementById(data);
+        $(this).append(draggableElement);
+    });
+});

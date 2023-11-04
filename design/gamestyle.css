@@ -6,10 +6,14 @@ body {
   .info {
     position:relative;
     font-family:Arial;
-    margin:10px;
+    margin:20px;
     text-align:center;
     border-radius:5px;
     font-size:15px;
+    background-color: white;
+    border-radius: 10px;
+    color:black;
+    padding: 10px;
   }
   
   #title {
@@ -35,10 +39,14 @@ body {
     background:black;
     border:5px solid black;
     margin:auto;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(3, 1fr);
   }
   
   #images {
     width: 100%
+    
   }
   
   img {
@@ -104,3 +112,23 @@ body {
     background-image: url("https://www.imgonline.com.ua/result_img/imgonline-com-ua-cut-image-yTzJ0mBr0dY8RC/image_part_009.jpg");
 
   }
+  .container1{
+    width:100% !important;
+    max-width: 614px !important;
+    background-color: white !important;
+    margin: 0 auto 0px !important;
+    padding: 40px 30px 70px !important;
+    border-radius: 10px !important;
+    margin: 100px auto 7.5px !important;
+    height: fit-content !important;
+}
+.app-container {
+    display: flex;
+    width: 100%;
+ 
+    background-color: #24292d;
+    padding:10px;
+    flex-direction: column;
+    align-items: center;
+    
+ }

@@ -5,7 +5,7 @@
 }
 body {
     background-repeat: no-repeat;
-    background-image: url("images/cartoon.jpg");
+    background-image: url("cartoon.jpg");
     image-rendering: optimizeSpeed;
     background-size: cover;
     margin: 0;
@@ -27,7 +27,7 @@ body {
 }
 
 #test {
-    min-width: 700px;
+    min-width: 400px;
     max-width: 90%;
     margin: 0 auto;
     background-color: #24292d;
@@ -142,7 +142,7 @@ main {
     margin: auto;
     background-color: #313639;
     border-radius: 5px;
-    min-width: 400px;
+    min-width: 300px;
     transition: all 0.2s ease;
 }
 .anime:hover {
@@ -345,124 +345,4 @@ form {
 
 
 
-
-.todo-app {
-    width:100%;
-    background-color: white;
-    margin: 0 auto 0px;
-    padding: 40px 30px 70px;
-    border-radius: 10px;
-    
-}
-.app-container {
-    width:100% !important;
-    max-width: 540px !important;
-    background-color: white !important;
-    border-radius: 10px !important;
-    
-}
-.row1 {
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    background-color: #edeef0;
-    border-radius: 25px;
-    padding-left: 20px;
-    margin-bottom:25px;
-
-}
-input{
-    flex: 1 !important;
-    border: none !important;
-    outline: none !important;
-    background-color: transparent !important;
-    padding: 7.5px !important;
-    font-weight: 14px !important;
-    width: 70%;
-}
-#addTask{
-    position: relative;
-    border: none !important;
-    outline: none !important;
-    padding: 12px 50px !important;
-    color: white !important;
-    font-size: 16px !important;
-    cursor: pointer !important;
-    background:#50C878;
-    border-radius: 25px !important;
-    width:30%;
-    
-}
-
-ul li{
-    display: flex;
-    list-style: none;
-    font-size: 17px;
-    padding: 12px 8px 12px 50px;
-    user-select: none;
-    cursor: pointer;
-    position: relative;
-    text-align: left;
-    left:-3%;
-    width: 100%;
-    overflow: hidden;
-    flex-flow: column;
-}
-ul li::before {
-    content: '';
-    position: absolute;
-    height: 28px;
-    width: 28px;
-    border-radius: 50%;
-    background-image: url(images/unchecked.png);
-    background-size: cover;
-    background-position: center;
-    top: 12px;
-    left:8px;
-    color: #555555 !important;
-}
-
-ul li.checked {
-    color: #555555 !important;
-    text-decoration: line-through;
-}
-ul li.checked::before{
-    background-image: url(https://image.similarpng.com/very-thumbnail/2021/12/Green-check-mark-on-transparent-background-PNG.png);
-}
-ul li span{
-    position: absolute;
-    right: 0;
-    top: 5px;
-    width: 40px;
-    height: 40px;
-    font-size: 22px;
-    color: #555555 !important;
-    text-align: center;
-    line-height: 40px;
-}
-ul li span:hover {
-    background: #edeef0;
-    border-radius: 10px;
-    
-}
-
-
-.form-container {
-    display: flex;
-    width: 100%;
-    min-height: 100%;
-    background: linear-gradient(135deg, #153677, #4e085f);
-    padding:10px;
-    flex-direction: column;
-    align-content: space-between;
-}
-.container1 {
-    width:100% !important;
-    max-width: 540px !important;
-    background-color: white !important;
-    margin: 0 auto 0px !important;
-    padding: 40px 30px 70px !important;
-    border-radius: 10px !important;
-    margin: 100px auto 7.5px !important;
-}
 

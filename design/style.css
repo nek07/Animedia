@@ -7,18 +7,24 @@
 
 body {
     background-repeat: no-repeat;
-    background-image: url("images/cartoon.jpg");
+    background-image: url("cartoon.jpg");
     image-rendering: optimizeSpeed;
     background-size: cover;
     margin: 0;
     padding: 0;
-    max-height: max-content;
+    background-color: #555555;
+}
+
+#border {
+    background-color: #0e0e0e;
+    margin: 0;
+    font-family: sans-serif;
 }
 
 .app-container {
    display: flex;
    width: 100%;
-   min-height: 100vh;
+
    background-color: #24292d;
    padding:10px;
    flex-direction: column;
@@ -66,16 +72,7 @@ body {
     margin: 100px auto 7.5px !important;
     height: fit-content !important;
 }
-.container1{
-    width:100% !important;
-    max-width: 540px !important;
-    background-color: white !important;
-    margin: 0 auto 0px !important;
-    padding: 40px 30px 70px !important;
-    border-radius: 10px !important;
-    margin: 100px auto 7.5px !important;
-    height: fit-content !important;
-}
+
 .row1 {
     display: flex;
     align-items: center;
@@ -169,12 +166,13 @@ ul li span:hover {
     max-width:200px !important;
 }
 #test {
-    min-width: 700px;
-    max-width: 90%;
+    width: 90%;
+    min-width: 50%;
     margin: 0 auto;
-    background-color: #24292d;
-    height: 100%;
     padding-bottom: 10%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
     background-color: #24292d;
 }
 

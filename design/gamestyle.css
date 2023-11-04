@@ -6,7 +6,7 @@ body {
   .info {
     position:relative;
     font-family:Arial;
-    margin:20px;
+    margin:40px 20px 20px;
     text-align:center;
     border-radius:5px;
     font-size:15px;
@@ -14,6 +14,9 @@ body {
     border-radius: 10px;
     color:black;
     padding: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
   }
   
   #title {
@@ -31,17 +34,19 @@ body {
     border: 1px dashed gray;
     display: inline-block;
     margin: 0;
+
   }
   
   #text {
-    width:614px;
-    height:614px;
-    background:black;
-    border:5px solid black;
+    max-width:614px;
+    max-height:614px;
+    background-color: white;
+    border:5px solid white;
     margin:auto;
     display: grid;
     grid-template-columns: repeat(3, 1fr);
     grid-template-rows: repeat(3, 1fr);
+    overflow: scroll;
   }
   
   #images {
@@ -50,9 +55,10 @@ body {
   }
   
   img {
-    height: 180px;
-    width: 180px;
-
+    height: 30%;
+    width: 30%;
+    max-width: 180px;
+    max-height: 180px;
   }
   
   #drag4,
@@ -73,43 +79,42 @@ body {
   }
   
   #drag4 {
-    background-image: url("https://www.imgonline.com.ua/result_img/imgonline-com-ua-cut-image-yTzJ0mBr0dY8RC/image_part_001.jpg");
+    background-image: url("images/image_part_008.jpg");
   }
   
   #drag5 {
-    background-image: url("https://www.imgonline.com.ua/result_img/imgonline-com-ua-cut-image-yTzJ0mBr0dY8RC/image_part_002.jpg");
+    background-image: url("images/image_part_001.jpg");
   }
   
   #drag6 {
-    background-image: url("https://www.imgonline.com.ua/result_img/imgonline-com-ua-cut-image-yTzJ0mBr0dY8RC/image_part_003.jpg");
+    background-image: url("images/image_part_003.jpg");
   }
   
   #drag7 {
-    background-image: url("https://www.imgonline.com.ua/result_img/imgonline-com-ua-cut-image-yTzJ0mBr0dY8RC/image_part_004.jpg");
+    background-image: url("images/image_part_005.jpg");
   }
   
   #drag8 {
-    background-image: url("https://www.imgonline.com.ua/result_img/imgonline-com-ua-cut-image-yTzJ0mBr0dY8RC/image_part_005.jpg");
+    background-image: url("images/image_part_007.jpg");
 
   }
   
   #drag9 {
-    background-image: url("https://www.imgonline.com.ua/result_img/imgonline-com-ua-cut-image-yTzJ0mBr0dY8RC/image_part_006.jpg");
-
+     background-image: url("images/image_part_002.jpg");
   }
   
   #drag10 {
-    background-image: url("https://www.imgonline.com.ua/result_img/imgonline-com-ua-cut-image-yTzJ0mBr0dY8RC/image_part_007.jpg");
+    background-image: url("images/image_part_006.jpg");
 
 }
   
   #drag11 {
-    background-image: url("https://www.imgonline.com.ua/result_img/imgonline-com-ua-cut-image-yTzJ0mBr0dY8RC/image_part_008.jpg");
+    background-image: url("images/image_part_009.jpg");
 
 }
   
   #drag12 {
-    background-image: url("https://www.imgonline.com.ua/result_img/imgonline-com-ua-cut-image-yTzJ0mBr0dY8RC/image_part_009.jpg");
+    background-image: url("images/image_part_004.jpg");
 
   }
   .container1{
@@ -119,8 +124,9 @@ body {
     margin: 0 auto 0px !important;
     padding: 40px 30px 70px !important;
     border-radius: 10px !important;
-    margin: 100px auto 7.5px !important;
-    height: fit-content !important;
+    margin: 0px auto 100px !important;
+
+    
 }
 .app-container {
     display: flex;
@@ -132,3 +138,13 @@ body {
     align-items: center;
     
  }
+ #test {
+    width: 90%;
+    min-width: 50%;
+    margin: 0 auto;
+    padding-bottom: 10%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #24292d;
+}

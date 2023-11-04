@@ -17,4 +17,7 @@ $(document).ready(function() {
         var draggableElement = document.getElementById(data);
         $(this).append(draggableElement);
     });
+    $(".help-button").on("click",function(){
+        
+    })
 });

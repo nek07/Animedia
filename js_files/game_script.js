@@ -22,6 +22,7 @@ $(document).ready(function() {
     })
 
     $("#action-button").on("click",function() {
+        $('.app-container').animate({ opacity: 1 }, 1000); 
         $("#hint").slideToggle("slow", function() {
           $("#sound").slideToggle("slow", function() {
             $("#quote").slideToggle("slow");
@@ -36,7 +37,7 @@ $(document).ready(function() {
     })
     $('#sound').on('click',function(){
         $('#music').fadeIn(0.0001);
-        $('#sound > span').fadeOut(0.0001)
+        $('#sound > span').animate({ opacity: 0 }, 0.0001); 
     })
     
 });

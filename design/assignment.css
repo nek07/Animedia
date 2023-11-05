@@ -343,6 +343,41 @@ form {
 
 
 
-
+/* Remove default list-style and padding */
+li {
+    list-style: none !important;
+    padding: 0 !important;
+    color:white !important;
+  }
+  
+  /* Style the dropdown items */
+  .dropdown-item {
+    display: block !important;
+    padding: 0.5rem 1rem !important;
+    text-decoration: none !important;
+    color: #333 !important; /* Text color */
+    background-color: #fff !important; /* Background color */
+  }
+  
+  /* Style on hover and focus */
+  .dropdown-item:hover,
+  .dropdown-item:focus {
+    background-color: #f0f0f0 !important; /* Hover/focus background color */
+  }
+  
+  /* Style the button */
+  .dropdown button {
+    border: none !important;
+    background-color: transparent !important;
+    padding: 0.5rem 1rem !important;
+    color: #333 !important; /* Button text color */
+    border-radius: 0 !important;
+  }
+  
+  /* Remove the default button focus outline */
+  .dropdown button:focus {
+    outline: none !important;
+  }
+  
 
 

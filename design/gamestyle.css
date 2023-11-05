@@ -4,19 +4,20 @@ body {
   }
   
   .info {
-    position:relative;
+
     font-family:Arial;
-    margin:40px 20px 20px;
+
     text-align:center;
     border-radius:5px;
     font-size:15px;
     background-color: white;
-    border-radius: 10px;
+  
     color:black;
     padding: 10px;
     display: flex;
     align-items: center;
     justify-content: center;
+    width: 614px;
   }
   
   #title {
@@ -124,10 +125,11 @@ body {
     margin: 0 auto 0px !important;
     padding: 40px 30px 70px !important;
     border-radius: 10px !important;
-    margin: 0px auto 100px !important;
+    margin: 50px auto 50px !important;
+  }
 
     
-}
+
 .app-container {
     display: flex;
     width: 100%;
@@ -136,6 +138,7 @@ body {
     padding:10px;
     flex-direction: column;
     align-items: center;
+    justify-content: center;
     
  }
  #test {
@@ -148,3 +151,47 @@ body {
     justify-content: center;
     background-color: #24292d;
 }
+
+
+#hint, #sound, #quote{
+  font-family:Arial;
+  text-align:center;
+  font-size:15px;
+  background-color: white;
+  color:black;
+  padding: 10px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 614px;
+  transition: 0.3 ease;
+  
+}
+#hint:hover, #sound:hover, #quote:hover {
+  background-color: aliceblue;
+}
+#hint {
+  margin-top:1%;
+  border-top-left-radius: 5px;
+  border-top-right-radius: 5px;
+  border-bottom:#24292d solid 1px;
+  border-width: 80%;
+}
+#quote {
+  border-bottom-left-radius: 5px;
+  border-bottom-right-radius: 5px;
+  border-top:#24292d solid 1px;
+  border-width: 80%;
+  margin-bottom:1%;
+}
+.form-container1 {
+  display: flex;
+  width: 100%;
+  min-height: 100vh;
+  background-color: #24292d;
+  padding:10px;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+}
+

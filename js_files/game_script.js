@@ -20,4 +20,12 @@ $(document).ready(function() {
     $(".help-button").on("click",function(){
         
     })
+
+    $("#action-button").on("click",function() {
+        $("#hint").slideToggle("slow", function() {
+          $("#sound").slideToggle("slow", function() {
+            $("#quote").slideToggle("slow");
+          });
+        });
+      });
 });

@@ -36,7 +36,14 @@
                 <div id="hint" style="display: none;">Hint
 
                 </div>
-                <div id="sound" style="display: none;">Sound</div>
+                <div id="sound" style="display: none;">
+                    <span>Sound</span>
+                    <div id="music" style="display:none">
+                        <div id="musicName"></div>
+                        <button id="playButton"><iconify-icon icon="carbon:play-filled" style="color: #cdd3ff;" width="20" height="20"></iconify-icon></button>
+                        <button id="pauseButton"><iconify-icon icon="carbon:pause-filled" style="color: #cdd3ff;" width="20" height="20"></iconify-icon></button>
+                    </div>
+                </div>
                 <div id="quote" style="display: none;">Quote</div>
             </div>
 
@@ -67,7 +74,7 @@
                 <div id="div9" class="droppable" ondrop="drop(event)" ondragstart="drag(event)" ondragover="allowDrop(event)"></div>
             </div>
 
-            <div class="info"><p>Congratulations if you finished!<p></div>
+            
         </div>
     </div>
     
@@ -76,5 +83,6 @@
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.3.1/dist/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
     <script src="js_files/game_script.js"></script>
+    <script src="js_files/music.js"></script>
 </body>
 </html>

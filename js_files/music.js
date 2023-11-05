@@ -2,15 +2,20 @@ $(document).ready(function() {
     // Create an audio element with jQuery
     var audio = $('<audio>', {
       controls: true,
-      src: 'your-music-file.mp3' // Replace 'your-music-file.mp3' with the actual URL or path to your music file
+      src: 'music/lofi1.mp3' 
+      
     });
   
-    // Append the audio element to the body
-    $('body').append(audio);
+    // Append the audio element to the #music div
+    
   
     // Function to play the music
     function playMusic() {
-      audio[0].play();
+      audio[0].play()
+    }
+
+    function showName(){
+        return audio.src;
     }
   
     // Function to pause the music
@@ -21,4 +26,6 @@ $(document).ready(function() {
     // Event listeners for the play and pause buttons
     $('#playButton').click(playMusic);
     $('#pauseButton').click(pauseMusic);
+    $('#musicName').text("El Jazzy Chavo - Innerspaces");
   });
+  

@@ -34,4 +34,9 @@ $(document).ready(function() {
     $("#quote").on('click',function(){
         alert("Even if you do not have enough skill, just do it.")
     })
+    $('#sound').on('click',function(){
+        $('#music').fadeIn(0.0001);
+        $('#sound > span').fadeOut(0.0001)
+    })
+    
 });

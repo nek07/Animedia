@@ -28,4 +28,10 @@ $(document).ready(function() {
           });
         });
       });
+    $("#hint").on('click',function(){
+        alert("The result of puzzle is Satoru Gojo from Jujutsu Kaisen");
+    })
+    $("#quote").on('click',function(){
+        alert("Even if you do not have enough skill, just do it.")
+    })
 });

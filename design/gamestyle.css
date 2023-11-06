@@ -210,3 +210,10 @@ button{
   background-color: inherit;
   padding: 3px;
 }
+.card:hover {
+  background-color:aliceblue!important;
+  
+}
+.card {
+  transition: 0.3 ease !important;
+}

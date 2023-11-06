@@ -1,6 +1,11 @@
 body {
-    background:#6b6b69;
-    color:white;
+  background-repeat: no-repeat;
+  background-image: url("cartoon.jpg");
+  image-rendering: optimizeSpeed;
+  background-size: cover;
+  margin: 0;
+  padding: 0;
+  background-color: #555555;
   }
   
   .info {

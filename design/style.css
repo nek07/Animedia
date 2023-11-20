@@ -234,3 +234,29 @@ ul li span:hover {
   input {
     padding: 5px;
   }
+  footer {
+    background-color: black;
+    width: 100%;
+    height: 80px;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+}
+.footer-link:hover {
+    color:#FCDC02;
+}
+.footer-link{
+    color: #3273AB;
+    text-decoration: none;
+    font-weight: 525;
+    transition: all 0.15s ease;
+    
+}
+.footer-text {
+    width: 90%;
+    text-align: left;
+    font-weight: 500;
+    font-size: 15px;
+    color:#555555;
+    margin-left: 10px;
+}

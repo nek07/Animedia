@@ -202,11 +202,9 @@ main {
 
 
 #about {
-    display: flex;
+
     background-color: #202020;
-    flex-direction: row;
-    justify-content: space-between;
-    align-items: center;
+    
 
     
 }

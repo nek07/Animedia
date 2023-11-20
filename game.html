@@ -15,28 +15,26 @@
     
     <link rel="stylesheet" href="design/gamestyle.css">
 </head>
-<body>
-    <div id="test" class="row">
-        <nav class="navbar navbar-dark bg-dark col-lg-12 col-xs-8">
+<body class="row">
+    <div class="container col-lg-11 col-md-12 col-xs-12 col-sm-12">
+        <nav class="navbar navbar-dark bg-dark col-12">
             <a href="index.html"><iconify-icon icon="meteocons:fog-day-fill" width="30" height="30"></iconify-icon></a>
-            <div id="navigation" class="row" style="position:relative; right:2%">
+            <nav id="navigation" class="row" style="position:relative; right:2%">
                 <a href="game.html" target="_blank" class="col-3"><iconify-icon icon="ci:puzzle" style="color: #cdd3ff;" width="27.5" height="27.5"></iconify-icon></a>
                 <a href="form.html" target="_blank" class="col-3"><iconify-icon icon="line-md:email-twotone" style="color: #cdd3ff"  width="27.5" height="27.5"></iconify-icon></a>
                 <a href="todoist.html" target="_blank" class="col-3"><iconify-icon icon="line-md:lightbulb-twotone" style="color: #cdd3ff"  width="27.5" height="27.5"></iconify-icon></a>
                 <a href="login.html" target="_blank" class="col-3"><iconify-icon icon="line-md:account-small" style="color: #cdd3ff;" width="27.5" height="27.5"></iconify-icon></a>
-            </div>
+            </nav>
         </nav>
-        <div class="app-container col-12">
-            <br>
-            <div id="container1 col-12" style="margin-top: 100px !important;">
-            <div class="info" style="padding: 20px 10px">
-                <div id="title" style="position: relative; left: 3.5%;">PUZZLE</div>
-                <iconify-icon id="action-button" icon="ci:wavy-help" style="color: black; position: relative; left: 38%;" width="25px" height="25px" id="help-button"></iconify-icon>
-            </div>
-                <div id="hint" style="display: none;">Hint
-
-                </div>
-                <div id="sound" style="display: none;">
+        <main class="app-container col-12">
+            <div class="container-fluid row">
+                <div id="container1 col-12 row">
+                    <div class="info text-center mx-auto col-12" style="padding: 20px 10px">
+                    <div id="title" style="position: relative; left: 3.5%;">PUZZLE</div>
+                    <iconify-icon id="action-button" icon="ci:wavy-help" style="color: black; position: relative; left: 38%;" width="25px" height="25px" id="help-button"></iconify-icon>
+                    </div>
+                <div id="hint" class="text-center mx-auto col-12" style="display: none;">Hint</div>
+                <div class="text-center mx-auto col-12" id="sound" style="display: none;">
                     <span>Sound</span>
                     <div id="music" style="display:none">
                         <div id="musicName"></div>
@@ -44,42 +42,21 @@
                         <button id="pauseButton"><iconify-icon icon="carbon:pause-filled" style="color: #cdd3ff;" width="20" height="20"></iconify-icon></button>
                     </div>
                 </div>
-                <div id="quote" style="display: none;">Quote</div>
+                <div id="quote" class='text-center mx-auto col-12' style="display: none;">Quote</div>
             </div>
-            <br>
-            <div class="cards row" style="display: flex; align-items: space-between; justify-content: space-between;">
-                <div class="card col-5" style="width: 18rem; display: flex; flex-direction: column; align-items: center; justify-content: center; height:20rem">
-                    <img class="card-img-top" src="design/images/lofi.jpg" alt="Card image cap" style="max-width: 80%; height: auto; object-fit:cover; margin:5px">
-                    <div class="card-body">
-                        <p class="card-text">Purple sunset</p>
-                    </div>
-                </div>
-                <div class="card col-5" style="width: 18rem; display: flex; flex-direction: column; align-items: center; justify-content: center;">
-                    <img class="card-img-top" src="design/images/0532daf21ee2861cbd80f7792c1d2de1.jpg" alt="Card image cap" style="max-width: 80%; height: 18rem; object-fit:cover; margin:5px;
-                    object-position: center;">
-                    <div class="card-body">
-                        <p class="card-text">Satoru Gojo</p>
-                    </div>
-                </div>
-            </div>
-            
 
-            <div class="container1 col-4" id="images">
+            <div id='items-container' class="container1 col-lg-6 col-md-5 col-xs-12 " id="images">
                 <div id="drag6" draggable="true" class="draggable" ondragstart="drag(event)"></div>
                 <div id="drag7" draggable="true" class="draggable" ondragstart="drag(event)"></div>
                 <div id="drag12" draggable="true" class="draggable" ondragstart="drag(event)" ></div>
                 <div id="drag4" class="draggable" draggable="true" ondragstart="drag(event)"></div>
-                
                 <div id="drag9" draggable="true" class="draggable" ondragstart="drag(event)"></div>
                 <div id="drag10" draggable="true" class="draggable" ondragstart="drag(event)"></div>
                 <div id="drag11" draggable="true" class="draggable" ondragstart="drag(event)"></div>
                 <div id="drag8" draggable="true" class="draggable" ondragstart="drag(event)"></div>
                 <div id="drag5" class="draggable" draggable="true" ondragstart="drag(event)"></div>
-                
-               
             </div>
-
-            <div id="text" class="container1 col-4">
+            <div id="text" class="container1 col-lg-6 col-md-5 col-xs-12">
                 <div id="div1" class="droppable" ondrop="drop(event)" ondragstart="drag(event)"  ondragover="allowDrop(event)"></div>
                 <div id="div2" class="droppable" ondrop="drop(event)" ondragstart="drag(event)" ondragover="allowDrop(event)"></div>
                 <div id="div3" class="droppable" ondrop="drop(event)" ondragstart="drag(event)" ondragover="allowDrop(event)"></div>
@@ -90,9 +67,12 @@
                 <div id="div8" class="droppable" ondrop="drop(event)" ondragstart="drag(event)" ondragover="allowDrop(event)"></div>
                 <div id="div9" class="droppable" ondrop="drop(event)" ondragstart="drag(event)" ondragover="allowDrop(event)"></div>
             </div>
-
-            
         </div>
+        </main>
+        <footer>
+            <span class="footer-text"><a class="footer-link" href="github.com/nek07">Для правообладателей</a> Или писать на почту ataytoleuov05@gmail.com</span>
+            <span class="footer-text">Anime Онлайн 2022 (18+) <a href="github.com/nek07" class="footer-link">Все аниме онлайн в одном месте</a> | <a class="footer-link" href="https://doram.club/">Дорамы смотреть</a></span>         
+        </footer>
     </div>
     
     <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>

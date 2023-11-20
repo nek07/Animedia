@@ -8,7 +8,7 @@ $(document).ready(function() {
   
     // Append the audio element to the #music div
     
-  
+    
     // Function to play the music
     function playMusic() {
       audio[0].play()

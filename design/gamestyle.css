@@ -75,7 +75,7 @@ body {
   #drag12 {
     height: 100px;
     width: 100px;
-    object-fit: cover;
+    object-fit:fill;
     image-rendering: optimizeSpeed;
     background-size: cover;
     display: inline-block;

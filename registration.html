@@ -2,22 +2,23 @@
 <html>
 
 <head>
-    <title>Todoist</title>
+    <title>Form</title>
 
     <link rel="icon" type="images/x-icon" href="japan-icon.ico">
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
     <script src="https://code.iconify.design/iconify-icon/1.0.7/iconify-icon.min.js"></script>
     <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.3.1/dist/css/bootstrap.min.css"
-        integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Montserrat&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
     <link rel="stylesheet" href="design/style.css">
 </head>
 
-<body id="border">
-    <div id="test" class="row">
-        <nav class="navbar navbar-dark bg-dark col-lg-12 col-xs-12">
-            <a href="index.html"><iconify-icon icon="meteocons:fog-day-fill" width="30" height="30"></iconify-icon></a>
+<body class="row">
+    <div class="container col-lg-11 col-md-12 col-xs-12 col-sm-12">
+        <nav class="navbar navbar-dark bg-dark ">
+            <a href="index.html" class="col-8"><iconify-icon icon="meteocons:fog-day-fill" width="30"
+                    height="30"></iconify-icon></a>
             <div id="navigation" class="row" style="position:relative; right:2%">
                 <a href="game.html" target="_blank" class=col-3><iconify-icon icon="ci:puzzle" style="color: #cdd3ff;"
                         width="27.5" height="27.5"></iconify-icon></a>
@@ -30,52 +31,75 @@
             </div>
         </nav>
 
+        <main class="app-container">
+            <div class="container-fluid row">
+                <div class="container1 col-12">
+                    <div class="row justify-content-center">
+                            <form id="regForm" action="">
+                                <h2 class="text-center" style="font-weight: 600;">Sign Up</h2>
+                                <br>
+                                <!-- One "tab" for each step in the form: -->
+                                <div class="tab">
+                                    <label for="name">First name</label>
+                                  <p><input placeholder="Enter your first name" oninput="this.className = ''"></p>
+                                  <label for="lastname">Last name</label>
+                                  <p><input placeholder="Enter your last name" oninput="this.className = ''"></p>
+                                </div>
+                                
+                                <div class="tab">Contact Info:
+                                  <label for="email">Email</label>
+                                  <p><input placeholder="Enter your Email" oninput="this.className = ''"></p>
+                                  <label for="username">Phone number</label>
+                                  <p><input placeholder="Enter your phone number" oninput="this.className = ''"></p>
+                                </div>
+                                
+                                <div class="tab">
+                                    <label for="birthDay">Birth day</label>
+                                  <p><input placeholder="Day(d)" oninput="this.className = ''"></p>
+                                  <p><input placeholder="Month(mm)" oninput="this.className = ''"></p>
+                                  <p><input placeholder="Year(yyyy)" oninput="this.className = ''"></p>
+                                </div>
+                                
+                                <div class="tab">
+                                    <label for="username">Username</label>
+                                  <p><input placeholder="Enter your username" oninput="this.className = ''"></p>
+                                  <label for="password">Password</label>
+                                  <p><input placeholder="Enter your password" oninput="this.className = ''"></p>
+                                </div>
+                                
+                                <div style="overflow:auto;">
+                                  <div style="float:right;">
+                                    <button class="btn btn-primary" type="button" id="prevBtn" onclick="nextPrev(-1)">Previous</button>
+                                    <button class="btn btn-primary" type="button" id="nextBtn" onclick="nextPrev(1)">Next</button>
+                                  </div>
+                                </div>
+                                
+                                <!-- Circles which indicates the steps of the form: -->
+                                <div style="text-align:center;margin-top:40px;">
+                                  <span class="step"></span>
+                                  <span class="step"></span>
+                                  <span class="step"></span>
+                                  <span class="step"></span>
+                                </div>
+                                
+                                </form>
+                        </div>
+                    <p class="text-center mt-3">
+                        Already have an account? <a href="login.html">Sign In</a>
+                    </p>
 
-        <div class="app-container col-lg-12 col-xs-12">
-            <div class="container1">
-                <div class="row justify-content-center">
-                    <div class="col-md-12">
-                        <h2 class="text-center" style="font-weight: 600;">Sign Up</h2>
-                        <br>
-                        <form id="registrationForm">
-                            <div class="form-group">
-                                <label for="username">Username</label>
-                                <input type="text" class="form-control" id="username" name="username"
-                                    placeholder="Enter your username">
-                                <span class="error" id="usernameError"></span>
-                            </div>
-                            <div class="form-group">
-                                <label for="password">Password</label>
-                                <input type="password" class="form-control" id="password" name="password"
-                                    placeholder="Enter your password">
-                                <span class="error" id="passwordError"></span>
-                            </div>
-                            <div class="form-group">
-                                <label for="confirmPassword">Confirm Password</label>
-                                <input type="password" class="form-control" id="confirmPassword" name="confirmPassword"
-                                    placeholder="Confirm your password">
-                                <span class="error" id="confirmPasswordError"></span>
-                            </div>
-                            <br>
-                            <button type="submit" class="btn btn-primary btn-block mt-3">Sign Up</button>
-                        </form>
-
-
-
-                    </div>
                 </div>
-                <br>
-                <p class="text-center mt-3">
-                    You already have an account? <a href="login.html">Sign In</a>
-                </p>
-
             </div>
-
-        </div>
-
+        </main>
+        <footer>
+            <span class="footer-text"><a class="footer-link" href="github.com/nek07">Для правообладателей</a> Или писать
+                на почту ataytoleuov05@gmail.com</span>
+            <span class="footer-text">Anime Онлайн 2022 (18+) <a href="github.com/nek07" class="footer-link">Все аниме
+                    онлайн в одном месте</a> | <a class="footer-link" href="https://doram.club/">Дорамы
+                    смотреть</a></span>
+        </footer>
     </div>
     <script src="js_files/jquery.js"></script>
-    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
     <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
         integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
         crossorigin="anonymous"></script>

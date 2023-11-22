@@ -241,6 +241,7 @@ ul li span:hover {
     display: flex;
     justify-content: center;
     flex-direction: column;
+    padding:3% 0;
 }
 .footer-link:hover {
     color:#FCDC02;
@@ -258,5 +259,57 @@ ul li span:hover {
     font-weight: 500;
     font-size: 15px;
     color:#555555;
+    
+    margin:0.2% 0;
     margin-left: 10px;
 }
+
+#regForm {
+    background-color: #ffffff;
+    padding: 1%;
+    
+    width: 70%;
+   
+  }
+  
+  /* Style the input fields */
+  input {
+    padding: 10px;
+    width: 100%;
+    font-size: 17px;
+    font-family: Montserrat;
+    border: 1px solid #aaaaaa;
+    border-radius: 5px;
+  }
+  
+  /* Mark input boxes that gets an error on validation: */
+  input.invalid {
+    background-color: #ffdddd;
+  }
+  
+  /* Hide all steps by default: */
+  .tab {
+    display: none;
+  }
+  
+  /* Make circles that indicate the steps of the form: */
+  .step {
+    height: 15px;
+    width: 15px;
+    margin: 0 2px;
+    background-color: #bbbbbb;
+    border: none;
+    border-radius: 50%;
+    display: inline-block;
+    opacity: 0.5;
+  }
+  
+  /* Mark the active step: */
+  .step.active {
+    opacity: 1;
+  }
+  
+  /* Mark the steps that are finished and valid: */
+  .step.finish {
+    background-color: #04AA6D;
+  }

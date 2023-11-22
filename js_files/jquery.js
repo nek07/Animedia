@@ -70,3 +70,12 @@ function fixStepIndicator(n) {
   //... and adds the "active" class to the current step:
   x[n].className += " active";
 }
+
+function validateEmail(email){
+  let emailRegex = "/^[\w-\.]+@([\w-]+\.)+[\w-]{2,4}$/g"
+  return emailRegex.test(email);
+}
+function validatePhoneNumber(number){
+  let pNumRegex="^[\+]?[(]?[0-9]{3}[)]?[-\s\.]?[0-9]{3}[-\s\.]?[0-9]{4,6}$";
+  return pNumRegex.test(number);
+}

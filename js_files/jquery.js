@@ -45,14 +45,77 @@ function validateForm() {
   x = document.getElementsByClassName("tab");
   y = x[currentTab].getElementsByTagName("input");
   // A loop that checks every input field in the current tab:
-  for (i = 0; i < y.length; i++) {
-    // If a field is empty...
-    if (y[i].value == "") {
-      // add an "invalid" class to the field:
-      y[i].className += " invalid";
-      // and set the current valid status to false:
-      valid = false;
-    }
+
+
+  switch(currentTab){
+    case 0:
+      if(!/^[a-zA-Z]+$/.test(y[0].value) || y[0].value==""){
+        y[0].classList.add("invalid");
+        valid=false;
+        alert('First name is incorrect')
+      }
+      if(!/^[a-zA-Z]+$/.test(y[1].value) || y[1].value==""){
+        y[1].classList.add("invalid");
+        valid=false;
+        alert('Last name is incorrect')
+      }
+      break;
+      case 1:
+        if (!/^[\w-\.]+@([\w-]+\.)+[\w-]{2,4}$/.test(y[0].value) || y[0].value === "") {
+          y[0].classList.add("invalid"); // Use classList.add to add the "invalid" class
+          valid = false;
+          alert('Email is incorrect');
+        } else {
+          y[0].classList.remove("invalid"); // Remove the "invalid" class if the email is correct
+        }
+      
+        if (!/^[\+]?[(]?[0-9]{3}[)]?[-\s\.]?[0-9]{3}[-\s\.]?[0-9]{4,6}$/.test(y[1].value) || y[1].value === "") {
+          y[1].classList.add("invalid"); // Use classList.add to add the "invalid" class
+          valid = false;
+          alert('Phone number is incorrect');
+        } else {
+          y[1].classList.remove("invalid"); // Remove the "invalid" class if the phone number is correct
+        }
+        break;
+      case 2:
+        if(!/^([1-9]|[1-2][0-9]|3[0-1])/.test(y[0].value) || y[0].value==""){
+          y[0].classList.add("invalid"); // Use classList.add to add the "invalid" class
+          valid = false;
+          alert('Day number is incorrect');
+        } else {
+          y[0].classList.remove("invalid"); // Remove the "invalid" class if the email is correct
+        }
+        if (!/^([1-9]|1[0-2])$/.test(y[1].value) || y[1].value === "") {
+          y[1].classList.add("invalid"); // Use classList.add to add the "invalid" class
+          valid = false;
+          alert('Month number is incorrect');
+        } else {
+          y[1].classList.remove("invalid"); // Remove the "invalid" class if the phone number is correct
+        }
+        if (!/\d{4}$/.test(y[2].value) || y[2].value === "") {
+          y[2].classList.add("invalid"); // Use classList.add to add the "invalid" class
+          valid = false;
+          alert('Year number is incorrect');
+        } else {
+          y[2].classList.remove("invalid"); // Remove the "invalid" class if the phone number is correct
+        }
+        break;
+        case 3:
+          if(!/^[a-zA-Z][a-zA-Z0-9]*$/.test(y[0].value) || y[0].value==""){
+            y[0].classList.add("invalid"); // Use classList.add to add the "invalid" class
+            valid = false;
+            alert('Username must have any symbols');
+          } else {
+            y[0].classList.remove("invalid"); // Remove the "invalid" class if the email is correct
+          }
+          if(!/^(?=.*[a-z])(?=.*[A-Z])(?=.*\d)(?=.*[@$!%*?&])[A-Za-z\d@$!%*?&]{8,}$/.test(y[1].value) || y[1].value==""){
+            y[1].classList.add("invalid"); // Use classList.add to add the "invalid" class
+            valid = false;
+            alert('Password must have more than 8 symbols');
+          } else {
+            y[1].classList.remove("invalid"); // Remove the "invalid" class if the email is correct
+          }
+  
   }
   // If the valid status is true, mark the step as finished and valid:
   if (valid) {
@@ -71,11 +134,3 @@ function fixStepIndicator(n) {
   x[n].className += " active";
 }
 
-function validateEmail(email){
-  let emailRegex = "/^[\w-\.]+@([\w-]+\.)+[\w-]{2,4}$/g"
-  return emailRegex.test(email);
-}
-function validatePhoneNumber(number){
-  let pNumRegex="^[\+]?[(]?[0-9]{3}[)]?[-\s\.]?[0-9]{3}[-\s\.]?[0-9]{4,6}$";
-  return pNumRegex.test(number);
-}

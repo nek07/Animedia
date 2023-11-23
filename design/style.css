@@ -7,7 +7,7 @@
 
 body {
     background-repeat: no-repeat;
-    background-image: url("cartoon.jpg");
+    background-image: url("images/cartoon.jpg");
     image-rendering: optimizeSpeed;
     background-size: cover;
     margin: 0;
@@ -313,3 +313,30 @@ ul li span:hover {
   .step.finish {
     background-color: #04AA6D;
   }
+
+ 
+#videoContainer {
+  position: relative;
+  width: 100%;
+}
+
+#video1 {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+#fullSizeBtn {
+  background-color: #008CBA;
+  color: white;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  margin-top: 10px;
+  transition: background-color 0.3s ease;
+}
+
+#fullSizeBtn:hover {
+  background-color: #0077A3;
+}

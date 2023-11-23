@@ -5,7 +5,7 @@
 }
 body {
   background-repeat: no-repeat;
-  background-image: url("cartoon.jpg");
+  background-image: url("images/cartoon.jpg");
   image-rendering: optimizeSpeed;
   background-size: cover;
   margin: 0;
@@ -438,6 +438,31 @@ li {
         border-radius: 5px;
         box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
         /* Center the modal horizontally and vertically */
+        position: relative;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+    }
+       
+    .modal-overlay {
+      display: none;
+      position: fixed;
+      top: 30%;
+      left: 30%;
+      width: 40%;
+      height: 20%;
+      background: rgba(0, 0, 0, 0.7);
+      justify-content: center;
+      align-items: center;
+ 
+    }
+
+    .modal-content {
+        background: #fff;
+        padding: 20px;
+        border-radius: 5px;
+        box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+        
         position: relative;
         top: 50%;
         left: 50%;

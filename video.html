@@ -2,9 +2,10 @@
 <html>
 
 <head>
-    <title>Form</title>
-
-    <link rel="icon" type="images/x-icon" href="japan-icon.ico">
+    <title>Video</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" type="design/images/x-icon" href="design/images/japan-icon.ico">
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <script src="https://code.iconify.design/iconify-icon/1.0.7/iconify-icon.min.js"></script>
     <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -36,6 +37,8 @@
                 <div class="container1 col-12 ">
                     <div style="text-align:center">
                         <button onclick="playPause()">Play/Pause</button>
+                        <button id="fullSizeBtn" onclick="toggleFullScreen()">Toggle Full Size</button>
+                        <br><br>
                         <video id="video1" width="100% ">
                             <source
                                 src="design/images/ノンテロップスペシャル版　TVアニメ「東京喰種トーキョーグール」オープニング映像 TK from 凛として時雨_unravel.mp4"
@@ -54,9 +57,9 @@
         </main>
 
         <footer>
-            <span class="footer-text"><a class="footer-link" href="github.com/nek07">Для правообладателей</a> Или писать
-                на почту ataytoleuov05@gmail.com</span>
-
+            <br>
+            <span class="footer-text"><a class="footer-link" href="https://github.com/nek07">Мой Github</a> или писать
+                на почту <a class='footer-link'>ataytoleuov05@gmail.com</a></span>
         </footer>
     </div>
 
@@ -69,7 +72,7 @@
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.3.1/dist/js/bootstrap.min.js"
         integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
         crossorigin="anonymous"></script>
-    <script >
+    <script>
         var myVideo = document.getElementById("video1");
 
         function playPause() {
@@ -77,6 +80,17 @@
                 myVideo.play();
             else
                 myVideo.pause();
+        }
+        function toggleFullScreen() {
+            if (myVideo.requestFullscreen) {
+                myVideo.requestFullscreen();
+            } else if (myVideo.mozRequestFullScreen) {
+                myVideo.mozRequestFullScreen();
+            } else if (myVideo.webkitRequestFullscreen) {
+                myVideo.webkitRequestFullscreen();
+            } else if (myVideo.msRequestFullscreen) {
+                myVideo.msRequestFullscreen();
+            }
         }
     </script>
 

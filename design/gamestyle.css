@@ -1,6 +1,6 @@
 body {
   background-repeat: no-repeat;
-  background-image: url("cartoon.jpg");
+  background-image: url("images/cartoon.jpg");
   image-rendering: optimizeSpeed;
   background-size: cover;
   margin: 0;
@@ -248,4 +248,57 @@ footer {
   font-size: 15px;
   color:#555555;
   margin-left: 10px;
+}
+
+
+#quiz-container {
+  max-width: 600px;
+  margin: 20px auto;
+  background-color: #fff;
+  padding: 20px;
+  border-radius: 8px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+#question-container {
+  text-align: left;
+}
+
+.options-container {
+  display: grid;
+  grid-template-columns: repeat(1, 1fr);
+  gap: 10px;
+  margin-top: 10px;
+}
+
+.option {
+  background-color: #4CAF50;
+  color: white;
+  padding: 10px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.option:hover {
+  background-color: #45a049;
+}
+
+#next-btn {
+  background-color: #008CBA;
+  color: white;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+#next-btn:hover {
+  background-color: #0077A3;
+}
+
+#result-container {
+  margin-top: 20px;
 }

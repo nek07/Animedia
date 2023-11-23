@@ -272,3 +272,18 @@ body {
     margin:0.2% 0;
     margin-left: 10px;
 }
+
+
+#scrollToTopBtn {
+  display: none;
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  background-color: #282832;
+  color: #fff;
+  border: none;
+  font-size: 1.5rem;
+  border-radius: 5px;
+  padding: 2%;
+  cursor: pointer;
+}

@@ -170,3 +170,4 @@ document.getElementById('start').addEventListener('click', startTimer);
 document.getElementById('stop').addEventListener('click', stopTimer);
 document.getElementById('reset').addEventListener('click', resetTimer);
 document.getElementById('set').addEventListener('click', setTimer);
+
